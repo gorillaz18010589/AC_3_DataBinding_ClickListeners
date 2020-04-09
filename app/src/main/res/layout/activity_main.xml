@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+     2.xml.data綁定這個寫好的類別
+        <data>
+            <variable
+                name="clickHandler" //自訂類別名稱
+                type="com.example.ac_3_databinding_clicklisteners.MainActivity.MainActivityClickHandlers" /> //要綁定的類別
+        </data>
+
+     6.在xml設定MainActivityClickHandlers裡的onOkButtonClicked(View view)方法
+     @{clickHandler::onOkButtonClicked} => @{1.name="clickHandler" //自訂類別名稱 ::(對應) 2.綁定類別裡的onOkButtonClicked}
+      <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onOkButtonClicked}"
+            android:text="ok" />
+     -->
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.example.ac_3_databinding_clicklisteners.MainActivity.MainActivityClickHandlers" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onOkButtonClicked}"
+            android:text="ok" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onNoButtonClicked}"
+            android:text="No" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onNoButtonClicked}"
+            android:text="No" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onNoButtonClicked}"
+            android:text="No" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onNoButtonClicked}"
+            android:text="No" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onNoButtonClicked}"
+            android:text="No" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::onNoButtonClicked}"
+            android:text="No" />
+
+    </LinearLayout>
+</layout>
