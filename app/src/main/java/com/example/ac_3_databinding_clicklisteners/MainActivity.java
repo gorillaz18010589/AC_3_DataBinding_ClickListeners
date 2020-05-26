@@ -45,7 +45,6 @@ activityMainBinding.setClickHandler(mainActivityClickHandlers);
 
 
 
-
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding activityMainBinding;
     private MainActivityClickHandlers mainActivityClickHandlers;
